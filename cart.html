@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VELORA | Cart</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <a href="index.html"
+           class="logo">
+            VELORA
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Shop</a>
+
+            <a href="products.html?category=Women">
+                Women
+            </a>
+
+            <a href="products.html?category=Men">
+                Men
+            </a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="cart.html"
+               class="active">
+                Cart <span id="cart-count">0</span>
+            </a>
+
+        </div>
+
+        <button id="dark-mode"
+                class="dark-mode-btn">
+            ☾
+        </button>
+
+    </nav>
+
+
+    <!-- Cart Header -->
+
+    <section class="page-header">
+
+        <p class="small-title">
+            YOUR SELECTION
+        </p>
+
+        <h1>Shopping Cart</h1>
+
+    </section>
+
+
+    <!-- Cart -->
+
+    <section class="cart-section">
+
+        <div id="cart-container"
+             class="cart-container">
+
+            <!-- JavaScript -->
+
+        </div>
+
+
+        <div class="cart-summary">
+
+            <p>Subtotal</p>
+
+            <h2>
+                $<span id="total-price">0.00</span>
+            </h2>
+
+            <p class="shipping-text">
+                Shipping calculated at checkout.
+            </p>
+
+            <button id="checkout-btn"
+                    class="main-btn">
+                Checkout
+            </button>
+
+            <a href="products.html"
+               class="continue-shopping">
+                ← Continue Shopping
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Checkout -->
+
+    <div id="checkout-modal"
+         class="modal">
+
+        <div class="checkout-box">
+
+            <button id="close-checkout"
+                    class="close-modal">
+                ×
+            </button>
+
+            <p class="small-title">
+                VELORA CHECKOUT
+            </p>
+
+            <h2>Complete your order</h2>
+
+            <form id="checkout-form">
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Full Name"
+                >
+
+                <input
+                    type="email"
+                    id="customer-email"
+                    placeholder="Email Address"
+                >
+
+                <input
+                    type="text"
+                    id="customer-address"
+                    placeholder="Address"
+                >
+
+                <button type="submit"
+                        class="main-btn">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div id="message-box"></div>
+
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div>
+
+                <h2>VELORA</h2>
+
+                <p>
+                    Everyday fashion with a little
+                    Egyptian attitude.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="products.html">Shop</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 VELORA</p>
+
+            <p>Made with style in Egypt.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
